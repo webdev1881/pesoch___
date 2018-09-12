@@ -1,8 +1,9 @@
+@import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 @import "./libs/animate.css"
 @import "./libs/slider.css"
 @import "./libs/slick-theme.css"
 @import "./libs/fm.revealator.jquery.css"
-
+@import "./mixins.styl"
 
 *
 	margin 0
@@ -135,12 +136,36 @@
 	background-color #365B72
 	height 200px
 	width 100%
-	margin-top 30px	
+	margin-top 30px
+
+.mixes
+	color red
+	border 1px solid black
+	size(600,50)
 
 
+
+
+
+// BOOTSTRAP 4
+
+
+.row
+	height 300px
+	border 1px solid #999
 	
+.col-md
+	border 1px solid #999
+	text-align center
 
 
 
 
 
+
+
+
+
+
+
+@import "./media.styl"

@@ -1,5 +1,21 @@
-	console.log("js is working...");
+$(document).ready(()=> {
+    console.log('jQuery is working');
+    
 
+});
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 	new WOW().init();
 
 	$('.slider').slick({
@@ -11,9 +27,6 @@
 	  slidesToShow: 1,
 	  slidesToScroll: 1
 })
-
-
-
 
 
 
@@ -66,58 +79,4 @@ var divs = $('.section');
        	$('html,body').scrollTop(divs.eq(div).offset().top)};
     });
   
-/*
-window.onload = function(){
-	getFrameContents()	
-}
-function getFrameContents(){
-   var iFrame =  document.getElementById('frmFile');
-   var iFrameBody;
-   if ( iFrame.contentDocument ) 
-   { // FF
-     iFrameBody = iFrame.contentDocument.getElementsByTagName('body')[0];
-   }
-   else if ( iFrame.contentWindow ) 
-   { // IE
-     iFrameBody = iFrame.contentWindow.document.getElementsByTagName('body')[0];
-   }
-    alert(iFrameBody.innerHTML);
- }
-
-
-//var a = document.getElementById("frmFile");
- function statsget() {
-   var uname = 'CertainPerformance';
-   fetch(`https://intranet.yugcontract.ua/mis/motivation/participants/get_list/?module_id=101&_dc=1534850931714&page=1&start=0&limit=150&sort=%5B%7B%22property%22%3A%22extra1%22%2C%22direction%22%3A%22DESC%22%7D%5D`)
-   
-     .then(res => res.json())
-     .then(resJSON => {
-     		{ mode: 'no-cors' }
-       // interact with resJSON here
-       console.log(resJSON);
-     });
- }
- statsget();
-
 */
-
-
-//console.log(a+".#"+document.body.innerHTML)
-
-
-
-//var a = document.getElementById("frmFile");
-//var a = document.createRange();
-//console.log(a.contentWindow.document.body)
-
-
-  	
-
-
-
-
-
-
-
-
-

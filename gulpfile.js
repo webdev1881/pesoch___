@@ -56,6 +56,7 @@ gulp.task('clean', function () {
 gulp.task('libs', function() {
   return gulp.src([
   				'node_modules/jquery/dist/jquery.min.js',
+          'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
   				'node_modules/wowjs/dist/wow.min.js',
           'node_modules/slick-carousel/slick/slick.min.js',
           'node_modules/fullpage.js/dist/fullpage.min.js',
