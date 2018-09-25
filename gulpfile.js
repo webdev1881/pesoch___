@@ -61,7 +61,8 @@ gulp.task('libs', function() {
           'node_modules/slick-carousel/slick/slick.min.js',
           'node_modules/fullpage.js/dist/fullpage.min.js',
           'src/js/libs/revealator.js',
-          'src/js/libs/parallax.js'
+          'src/js/libs/parallax.js',
+          'src/js/libs/wow.js',
 
   			])
 	    .pipe(concat('all_libs.js'))
