@@ -1,18 +1,14 @@
 
     console.log('jQuery is working');
-    
+ 
 
-// ANIMATE SCROLL REPEATER
+//___________________ ANIMATE SCROLL REPEATER
 
   WOW.prototype.addBox = function(element) {
     this.boxes.push(element);
   };
-  // Init WOW.js and get instance
   var wow = new WOW();
   wow.init();
-
-  // Attach scrollSpy to .wow elements for detect view exit events,
-  // then reset elements and add again for animation
   $('.wow').on('scrollSpy:exit', function() {
     $(this).css({
       'visibility': 'hidden',
@@ -25,15 +21,13 @@
 
 
 
-
+//_________Money
 String.prototype.reverse = function () {
     return this.split('').reverse().join('');
 };
-
 var money = function (n) {
     return n.toString().reverse().replace(/(\d{3})(?=\d)/g, '$1'+"&thinsp;").reverse();
 };
-
 console.log([money(1000), money(10000), money(100000), money(1000000)].join(' ~ '));
 
 

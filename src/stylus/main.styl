@@ -8,6 +8,26 @@
 *
 	margin 0
 	padding 0
+li
+	list-style-type: none
+
+
+// BOOTSTRAP 4
+h3
+	margin 0 auto
+	text-align center
+.my_boot .col, .col-8
+	text-align center
+	background-color #35394B
+	font-size 16px
+	color #eee
+	border 1px solid #1D2139
+
+
+
+
+
+
 
 
 
@@ -147,16 +167,8 @@
 
 
 
-// BOOTSTRAP 4
 
 
-.row
-	height 300px
-	border 1px solid #999
-	
-.col-md
-	border 1px solid #999
-	text-align center
 
 
 
@@ -167,6 +179,44 @@ fieldset
 fieldset,	legend
 	padding 0 1em
 	width inherit
+
+
+
+.mobile
+	position relative
+	width 360px
+	height 640px
+	background rgba(0,0,0,0.1)
+	margin 0 auto
+	transform rotate(-30deg) skew(25deg) scale(.6)
+	transition 0.5s	
+	& img
+		position absolute
+		width 100%
+		transition 0.5s		
+	&:hover img:nth-child(4)
+		transform translate(80px, -80px)
+		opacity 1
+	&:hover img:nth-child(3)
+		transform translate(60px, -60px)
+		opacity .8
+	&:hover img:nth-child(2)
+		transform translate(40px, -40px)
+		opacity .6
+	&:hover img:nth-child(1)
+		transform translate(20px, -20px)
+		opacity .4
+
+
+
+
+
+
+
+
+
+
+
 
 
 

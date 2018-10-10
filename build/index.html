@@ -7,13 +7,34 @@
 </head>
 <body>
   <h3>BOOTSTRAP 4</h3>
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md m-2 text-muted">One of three columns  Lorem ipsum dolor sit amet, </div>
-      <div class="col-md mr-auto">One of three columns</div>
-      <div class="col-md mr-auto">One of three columns</div>
-    </div>
-    <!--img(src="../src/img/electric.jpg", alt="").img-fluid-->
+  <div class="my_boot">
+    <div class="container-fluid">
+      <div class="row">Колонки одной ширины</div>
+      <div class="row">
+        <div class="col">col</div>
+        <div class="col">col</div>
+      </div>
+      <div class="row">
+        <div class="col">col</div>
+        <div class="col">col</div>
+        <div class="col">col</div>
+      </div>
+      <div class="row">Автоколонки</div>
+      <div class="row">
+        <div class="col">col</div>
+        <div class="col-8">col-8</div>
+        <div class="col">col</div>
+      </div>
+      <div class="row">от -sm до -xl</div>
+      <div class="row">.col- <576px</div>
+      <div class="row">.col-sm- ≥576px</div>
+      <div class="row">.col-md- ≥768px</div>
+      <div class="row">.col-lg- ≥992px</div>
+      <div class="row">.col-xl- ≥1200px</div>
+      <div class="row justify-content-center">
+        <div class="col col-lg-1">md-1</div>
+      </div>
+    </div><img class="img-fluid" src="../src/img/electric.jpg" alt=""/>
     <h4>Example heading<span class="badge badge-secondary">New</span></h4>
     <div class="btn btn-lg btn-primary">primary</div>
     <div class="btn btn-secondary">secondary</div>
@@ -85,69 +106,80 @@
     </form>
     <hr/>
     <hr/>
+    <div class="row">
+      <div class="col-lg-3">LOGO</div>
+      <div class="col-lg-5 ml-auto">
+        <nav>
+          <ul class="menu d-flex justify-content-center">
+            <li class="menu__item"><a href="">Один</a></li>
+            <li class="menu__item"><a href="">Два</a></li>
+            <li class="menu__item"><a href="">Три</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </div>
-  <!--
-  .section Some section
-  	.wrap
-  		.my_slider
-  			img.wow.pulse.animated.down(src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX14768389.jpg", alt="")
-  			.arrows
-  				.arr_next
-  					.ic &#8593
-  				.arr_prev
-  					.ic &#8595
-  			.slider
-  				.top.img-holder
-  				.top1
-  				.top2
-  				.top3
-  				.top4
-  
-  .section Some section
-  	.fp-bg
-  	.items-wrap
-  		.items.item1.wow.rollIn.infinite Item15
-  		.items.item2.wow.swing  Item2
-  		.items.item3.wow.lightSpeedIn  Item3
-  		.items.item4.wow  Item4
-  		.items.item5  Item5
-  		.items.item6  Item6
-  		.items.item7  Item7
-  		.items.item8  Item8
-  		.items.item9  Item9
-  		.items.item10 Item10
-  		.items.item11.wow.rollIn.infinite Item11
-  		.items.item12.wow.rollIn.infinite Item12
-  		.items.item13 Item13
-  		.items.item14 Item14
-  		.items.item15 Item15
-  		.items.item15 Item16
-  
-  
-  .section Some section
-  	.boxes-wrap
-  		.boxes.box1.revealator-fade Item1
-  		.boxes.box2.revealator-rotateleft Item2
-  		.boxes.box3.revealator-rotateright Item3
-  		.boxes.box4.revealator-slideright Item4
-  		.boxes.box5.revealator-slideup  Item5
-  		.boxes.box6.revealator-zoomin Item6
-  		.boxes.box7.revealator-zoomout  Item7
-  	
-  .section Some section
-  	input(type="date")
-  	button.SendEmail Send Email
-  
-  .mixes test
-  
-  
-  
-  
-  
-  
-  .foo
-  
-  -->
+  <div class="mobile"><img src="./src/img/mob.png" alt=""/><img src="./src/img/mob.png" alt=""/><img src="./src/img/mob.png" alt=""/><img src="./src/img/mob.png" alt=""/></div>
+  <div class="section">Some section
+    <div class="wrap">
+      <div class="my_slider"><img class="wow pulse animated down" src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX14768389.jpg" alt=""/>
+        <div class="arrows">
+          <div class="arr_next">
+            <div class="ic">&#8593</div>
+          </div>
+          <div class="arr_prev">
+            <div class="ic">&#8595</div>
+          </div>
+        </div>
+        <div class="slider">
+          <div class="top img-holder"></div>
+          <div class="top1"></div>
+          <div class="top2"></div>
+          <div class="top3"></div>
+          <div class="top4"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">Some section
+    <div class="fp-bg"></div>
+    <div class="items-wrap">
+      <div class="items item1 wow rollIn infinite">Item15</div>
+      <div class="items item2 wow swing"> Item2</div>
+      <div class="items item3 wow lightSpeedIn"> Item3</div>
+      <div class="items item4 wow"> Item4</div>
+      <div class="items item5"> Item5</div>
+      <div class="items item6"> Item6</div>
+      <div class="items item7"> Item7</div>
+      <div class="items item8"> Item8</div>
+      <div class="items item9"> Item9</div>
+      <div class="items item10">Item10</div>
+      <div class="items item11 wow rollIn infinite">Item11</div>
+      <div class="items item12 wow rollIn infinite">Item12</div>
+      <div class="items item13">Item13</div>
+      <div class="items item14">Item14</div>
+      <div class="items item15">Item15</div>
+      <div class="items item15">Item16</div>
+    </div>
+  </div>
+  <div class="section">Some section
+    <div class="boxes-wrap">
+      <div class="boxes box1 revealator-fade">Item1</div>
+      <div class="boxes box2 revealator-rotateleft">Item2</div>
+      <div class="boxes box3 revealator-rotateright">Item3</div>
+      <div class="boxes box4 revealator-slideright">Item4</div>
+      <div class="boxes box5 revealator-slideup"> Item5</div>
+      <div class="boxes box6 revealator-zoomin">Item6</div>
+      <div class="boxes box7 revealator-zoomout"> Item7</div>
+    </div>
+  </div>
+  <div class="section">Some section
+    <input type="date"/>
+    <button class="SendEmail">Send Email</button>
+  </div>
+  <div class="mixes">test
+    <div class="foo"></div>
+  </div>
   <script src="./src/js/libs/all_libs.js"></script>
   <script src="./src/js/main.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

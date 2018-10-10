@@ -82,7 +82,8 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 0
+  margin-top: 0;
+  margin-bottom: .5rem
 }
 dl,
 ol,
@@ -11079,6 +11080,21 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   margin: 0;
   padding: 0
 }
+li {
+  list-style-type: none
+}
+h3 {
+  margin: 0 auto;
+  text-align: center
+}
+.col-8,
+.my_boot .col {
+  text-align: center;
+  background-color: #35394b;
+  font-size: 16px;
+  color: #eee;
+  border: 1px solid #1d2139
+}
 .items-wrap {
   margin-bottom: 30px;
   height: 400px;
@@ -11213,14 +11229,6 @@ background-size: cover {
   width: 600px;
   height: 50px
 }
-.row {
-  height: 300px;
-  border: 1px solid #999
-}
-.col-md {
-  border: 1px solid #999;
-  text-align: center
-}
 fieldset {
   border: 1px groove #ddd!important
 }
@@ -11228,6 +11236,36 @@ fieldset,
 legend {
   padding: 0 1em;
   width: inherit
+}
+.mobile {
+  position: relative;
+  width: 360px;
+  height: 640px;
+  background: rgba(0,0,0,.1);
+  margin: 0 auto;
+  transform: rotate(-30deg) skew(25deg) scale(.6);
+  transition: .5s
+}
+.mobile img {
+  position: absolute;
+  width: 100%;
+  transition: .5s
+}
+.mobile:hover img:nth-child(4) {
+  transform: translate(80px,-80px);
+  opacity: 1
+}
+.mobile:hover img:nth-child(3) {
+  transform: translate(60px,-60px);
+  opacity: .8
+}
+.mobile:hover img:nth-child(2) {
+  transform: translate(40px,-40px);
+  opacity: .6
+}
+.mobile:hover img:nth-child(1) {
+  transform: translate(20px,-20px);
+  opacity: .4
 }
 @media (max-width:767.98px) {
   .container-fluid {

@@ -6,14 +6,41 @@ head
 	link(rel="stylesheet",type="text/css", href="./src/css/main.css")
 body
 	h3 BOOTSTRAP 4
-	.container
-		.row.align-items-center
-			.col-md.m-2.text-muted One of three columns  Lorem ipsum dolor sit amet, 
-			.col-md.mr-auto One of three columns
-			.col-md.mr-auto One of three columns
+	.my_boot
+		.container-fluid
+			.row Колонки одной ширины
+			.row
+				.col col
+				.col col
+			.row
+				.col col
+				.col col
+				.col col
+
+			.row Автоколонки
+			.row
+				.col col
+				.col-8 col-8
+				.col col
+
+			.row от -sm до -xl
+			.row .col- <576px
+			.row .col-sm- ≥576px
+			.row .col-md- ≥768px
+			.row .col-lg- ≥992px
+			.row .col-xl- ≥1200px
+			.row.justify-content-center
+				.col.col-lg-1 md-1
 
 
-		//img(src="../src/img/electric.jpg", alt="").img-fluid
+
+
+
+
+
+
+
+		img(src="../src/img/electric.jpg", alt="").img-fluid
 
 		h4 Example heading
 			span.badge.badge-secondary New
@@ -117,76 +144,80 @@ body
 		hr
 
 
+		.row
+			.col-lg-3 LOGO
+
+			.col-lg-5.ml-auto
+				nav
+					ul.menu.d-flex.justify-content-center
+						li.menu__item
+							a(href="") Один
+						li.menu__item
+							a(href="") Два
+						li.menu__item
+							a(href="") Три
+
+	.mobile
+		img(src="./src/img/mob.png", alt="")
+		img(src="./src/img/mob.png", alt="")
+		img(src="./src/img/mob.png", alt="")
+		img(src="./src/img/mob.png", alt="")
 
 
 
 
+	.section Some section
+		.wrap
+			.my_slider
+				img.wow.pulse.animated.down(src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX14768389.jpg", alt="")
+				.arrows
+					.arr_next
+						.ic &#8593
+					.arr_prev
+						.ic &#8595
+				.slider
+					.top.img-holder
+					.top1
+					.top2
+					.top3
+					.top4
+
+	.section Some section
+		.fp-bg
+		.items-wrap
+			.items.item1.wow.rollIn.infinite Item15
+			.items.item2.wow.swing  Item2
+			.items.item3.wow.lightSpeedIn  Item3
+			.items.item4.wow  Item4
+			.items.item5  Item5
+			.items.item6  Item6
+			.items.item7  Item7
+			.items.item8  Item8
+			.items.item9  Item9
+			.items.item10 Item10
+			.items.item11.wow.rollIn.infinite Item11
+			.items.item12.wow.rollIn.infinite Item12
+			.items.item13 Item13
+			.items.item14 Item14
+			.items.item15 Item15
+			.items.item15 Item16
 
 
+	.section Some section
+		.boxes-wrap
+			.boxes.box1.revealator-fade Item1
+			.boxes.box2.revealator-rotateleft Item2
+			.boxes.box3.revealator-rotateright Item3
+			.boxes.box4.revealator-slideright Item4
+			.boxes.box5.revealator-slideup  Item5
+			.boxes.box6.revealator-zoomin Item6
+			.boxes.box7.revealator-zoomout  Item7
+		
+	.section Some section
+		input(type="date")
+		button.SendEmail Send Email
 
-
-
-
-
-
-
-
-
-
-	//
-
-		.section Some section
-			.wrap
-				.my_slider
-					img.wow.pulse.animated.down(src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX14768389.jpg", alt="")
-					.arrows
-						.arr_next
-							.ic &#8593
-						.arr_prev
-							.ic &#8595
-					.slider
-						.top.img-holder
-						.top1
-						.top2
-						.top3
-						.top4
-
-		.section Some section
-			.fp-bg
-			.items-wrap
-				.items.item1.wow.rollIn.infinite Item15
-				.items.item2.wow.swing  Item2
-				.items.item3.wow.lightSpeedIn  Item3
-				.items.item4.wow  Item4
-				.items.item5  Item5
-				.items.item6  Item6
-				.items.item7  Item7
-				.items.item8  Item8
-				.items.item9  Item9
-				.items.item10 Item10
-				.items.item11.wow.rollIn.infinite Item11
-				.items.item12.wow.rollIn.infinite Item12
-				.items.item13 Item13
-				.items.item14 Item14
-				.items.item15 Item15
-				.items.item15 Item16
-
-
-		.section Some section
-			.boxes-wrap
-				.boxes.box1.revealator-fade Item1
-				.boxes.box2.revealator-rotateleft Item2
-				.boxes.box3.revealator-rotateright Item3
-				.boxes.box4.revealator-slideright Item4
-				.boxes.box5.revealator-slideup  Item5
-				.boxes.box6.revealator-zoomin Item6
-				.boxes.box7.revealator-zoomout  Item7
-			
-		.section Some section
-			input(type="date")
-			button.SendEmail Send Email
-
-		.mixes test
+	.mixes test
 
 		
 
