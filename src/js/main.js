@@ -31,6 +31,23 @@ var money = function (n) {
 console.log([money(1000), money(10000), money(100000), money(1000000)].join(' ~ '));
 
 
+//Прокрутка к секции (по высоте)
+
+$(document).ready(function(){
+  $("#menu").on("click","a", function (event) {
+    //отменяем стандартную обработку нажатия по ссылке
+    event.preventDefault();
+
+    //забираем идентификатор бока с атрибута href
+    var id  = $(this).attr('href'),
+
+    //узнаем высоту от начала страницы до блока на который ссылается якорь
+      top = $(id).offset().top;
+    
+    //анимируем переход на расстояние - top за 1500 мс
+    $('body,html').animate({scrollTop: top}, 1500);
+  });
+});
 
 
 
