@@ -32,7 +32,7 @@ console.log([money(1000), money(10000), money(100000), money(1000000)].join(' ~ 
 
 
 //Прокрутка к секции (по высоте)
-
+//https://webcomplex.com.ua/jquery/plavnyj-skroll-posle-nazhatiya-na-yakornuyu-ssylku.html
 $(document).ready(function(){
   $("#menu").on("click","a", function (event) {
     //отменяем стандартную обработку нажатия по ссылке
